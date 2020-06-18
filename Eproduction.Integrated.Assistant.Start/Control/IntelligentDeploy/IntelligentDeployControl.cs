@@ -58,6 +58,7 @@ namespace Eproduction.Integrated.Assistant.Start.Control {
         private const string _WebServer = "WebServer";
         private const string _Industry = "Industry";
         private const string _Customization = "Customization";
+        private const string _BusinessPackage = "BusinessPackage";
         private IEnumerable<IComponent> _EnabledComponents = null;
         private IEnumerable<IComponent> _VisibleComponents = null;
         private IList<DeployModel> DeployModels = new List<DeployModel>();
@@ -315,7 +316,7 @@ namespace Eproduction.Integrated.Assistant.Start.Control {
             //定义BackgroundWorker运行过程中需管控可用状态的界面组件
             _EnabledComponents = new System.Windows.Forms.Control[] {
                 lnkSelectVersion, lnkEnvironmentPath, tboxEnvironmentPath, lnkExportPath, tboxExportPath, tboxTypeKey,
-                rdoBase, rdoIndustry, rdoCustomization, cboxDeployToClient, cboxDeployToServer, cboxDeployWebServer, cboxDeployZhCHTResources, cboxDeployEnUSResources, lnkLocateVsDevCmdbat, tboxComplieCommandText, btnComplie,
+                rdoBase, rdoIndustry, rdoCustomization, rdoBusinessPackage, rdoBusinessPackage, cboxDeployToClient, cboxDeployToServer, cboxDeployWebServer, cboxDeployZhCHTResources, cboxDeployEnUSResources, lnkLocateVsDevCmdbat, tboxComplieCommandText, btnComplie,
                 cboxKillEprocess, cboxKillClientProcess, cboxAutoDeploy, tboxServerParams, tboxClientParams, cboxApplyciBeenPutInStorage, cboxExcludeProgramInfo, cboxBeforeDeployementKillEprocess, tboxApplyciDocs, 
                 btnDeploy, btnStartServer, btnStartClient, btnDeployement, btnCheckReferences, btnKillEprocess
             };
@@ -458,6 +459,9 @@ namespace Eproduction.Integrated.Assistant.Start.Control {
                     break;
                 case DeployTarget.Customization:
                     rdoCustomization.Checked = true;
+                    break;
+                case DeployTarget.BusinessPackage:
+                    rdoBusinessPackage.Checked = true;
                     break;
             }
 
@@ -1266,6 +1270,9 @@ namespace Eproduction.Integrated.Assistant.Start.Control {
                     case DeployTarget.Customization:
                         middlePath = _Customization;
                         break;
+                    case DeployTarget.BusinessPackage:
+                        middlePath = _BusinessPackage;
+                        break;
                 }
                 return middlePath;
             };
@@ -1285,7 +1292,13 @@ namespace Eproduction.Integrated.Assistant.Start.Control {
                         if (SelectedVersion.DeployEnUSResources) targetDllFullPath = Path.Combine(destinationPath, sourceFileInfo.Directory.Name, sourceFileInfo.Name);
                         break;
                 }
-                if (!string.IsNullOrEmpty(targetDllFullPath)) {
+                if (!string.IsNullOrEmpty(targetDllFullPath))
+                {
+                    FileInfo targetDllFileInfo = new FileInfo(targetDllFullPath);
+                    if (!targetDllFileInfo.Directory.Exists)
+                    {
+                        targetDllFileInfo.Directory.Create();
+                    }
                     try {
                         sourceFileInfo.CopyTo(targetDllFullPath, true);
                         PrintProxy($"{DateTime.Now.ToStandardDateTimeString()} >> 拷贝文件 {sourceFileInfo.FullName} 到 {targetDllFullPath}");

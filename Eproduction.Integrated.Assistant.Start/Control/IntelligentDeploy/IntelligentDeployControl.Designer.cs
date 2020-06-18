@@ -44,6 +44,7 @@
             this.tabDeployAdvancedSetting = new System.Windows.Forms.TabControl();
             this.pageDeployAdvancedSetting = new System.Windows.Forms.TabPage();
             this.gboxDeployVersionTargets = new System.Windows.Forms.GroupBox();
+            this.rdoBusinessPackage = new System.Windows.Forms.RadioButton();
             this.rdoCustomization = new System.Windows.Forms.RadioButton();
             this.rdoIndustry = new System.Windows.Forms.RadioButton();
             this.rdoBase = new System.Windows.Forms.RadioButton();
@@ -381,6 +382,7 @@
             // 
             this.gboxDeployVersionTargets.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.gboxDeployVersionTargets.Controls.Add(this.rdoBusinessPackage);
             this.gboxDeployVersionTargets.Controls.Add(this.rdoCustomization);
             this.gboxDeployVersionTargets.Controls.Add(this.rdoIndustry);
             this.gboxDeployVersionTargets.Controls.Add(this.rdoBase);
@@ -390,6 +392,17 @@
             this.gboxDeployVersionTargets.TabIndex = 0;
             this.gboxDeployVersionTargets.TabStop = false;
             this.gboxDeployVersionTargets.Text = "版本性质设定";
+            // 
+            // rdoBusinessPackage
+            // 
+            this.rdoBusinessPackage.AutoSize = true;
+            this.rdoBusinessPackage.Location = new System.Drawing.Point(261, 20);
+            this.rdoBusinessPackage.Name = "rdoBusinessPackage";
+            this.rdoBusinessPackage.Size = new System.Drawing.Size(62, 21);
+            this.rdoBusinessPackage.TabIndex = 3;
+            this.rdoBusinessPackage.TabStop = true;
+            this.rdoBusinessPackage.Text = "服务商品";
+            this.rdoBusinessPackage.UseVisualStyleBackColor = true;
             // 
             // rdoCustomization
             // 
@@ -1341,6 +1354,7 @@
         private Common.Control.TextBoxEx tboxExportPath;
         private Common.Control.TextBoxEx tboxEnvironmentPath;
         private System.Windows.Forms.GroupBox gboxDeployVersionTargets;
+        private System.Windows.Forms.RadioButton rdoBusinessPackage;
         private System.Windows.Forms.RadioButton rdoCustomization;
         private System.Windows.Forms.RadioButton rdoIndustry;
         private System.Windows.Forms.RadioButton rdoBase;

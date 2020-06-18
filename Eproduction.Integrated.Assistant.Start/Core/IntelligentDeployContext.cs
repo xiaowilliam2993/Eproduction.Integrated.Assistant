@@ -1,12 +1,12 @@
 ﻿using Eproduction.Integrated.Assistant.Start.Core.Section;
 using Eproduction.Integrated.Assistant.Start.Control;
-using Eproduction.Integrated.Assistant.Common.Implement.Interface;
 using System.Collections.Generic;
 using System.Linq;
 using System.Configuration;
 using System.IO;
 
-namespace Eproduction.Integrated.Assistant.Start.Core {
+namespace Eproduction.Integrated.Assistant.Start.Core
+{
     public enum DeployTarget {
         /// <summary>
         /// 基版
@@ -19,7 +19,11 @@ namespace Eproduction.Integrated.Assistant.Start.Core {
         /// <summary>
         /// 个案包
         /// </summary>
-        Customization = 2
+        Customization = 2,
+        /// <summary>
+        ///  服务商品
+        /// </summary>
+        BusinessPackage = 3
     }
     /// <summary>
     /// 自动部署原型定义
