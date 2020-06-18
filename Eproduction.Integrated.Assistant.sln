@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eproduction.Integrated.Assistant.Common", "Eproduction.Integrated.Assistant.Common\Eproduction.Integrated.Assistant.Common.csproj", "{DEC3F138-1D0C-4F42-BAC2-652E18D390CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eproduction.Integrated.Assistant.Start", "Eproduction.Integrated.Assistant.Start\Eproduction.Integrated.Assistant.Start.csproj", "{C534665F-BDC5-404C-BCA6-49012EFAD3B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEC3F138-1D0C-4F42-BAC2-652E18D390CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC3F138-1D0C-4F42-BAC2-652E18D390CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC3F138-1D0C-4F42-BAC2-652E18D390CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC3F138-1D0C-4F42-BAC2-652E18D390CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C534665F-BDC5-404C-BCA6-49012EFAD3B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C534665F-BDC5-404C-BCA6-49012EFAD3B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C534665F-BDC5-404C-BCA6-49012EFAD3B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C534665F-BDC5-404C-BCA6-49012EFAD3B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ECCFCD63-3A6E-402A-AC4A-15F7DEB576B7}
+	EndGlobalSection
+EndGlobal

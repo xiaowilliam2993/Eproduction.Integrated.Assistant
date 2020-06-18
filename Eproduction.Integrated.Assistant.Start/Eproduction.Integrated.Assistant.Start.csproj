@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C534665F-BDC5-404C-BCA6-49012EFAD3B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Eproduction.Integrated.Assistant.Start</RootNamespace>
+    <AssemblyName>Eproduction.Integrated.Assistant</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Assembly\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Assembly\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\assistant.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control\EscloudIntegrate\EscloudIntegrateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\EscloudIntegrate\EscloudIntegrateControl.Designer.cs">
+      <DependentUpon>EscloudIntegrateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\EscloudIntegrateContext.cs" />
+    <Compile Include="Core\Model\EscloudIntegrate\CustomerInfo.cs" />
+    <Compile Include="Core\Section\EscloudIntegateContextSection.cs" />
+    <Compile Include="Form\EsCloudIntegrate\FindCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\EsCloudIntegrate\FindCustomerForm.Designer.cs">
+      <DependentUpon>FindCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\EsCloudIntegrate\EsCloudDbConnectionSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\EsCloudIntegrate\EsCloudDbConnectionSettingForm.Designer.cs">
+      <DependentUpon>EsCloudDbConnectionSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\IntelligentDeploy\AccountSetPerviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\IntelligentDeploy\AccountSetPerviewForm.Designer.cs">
+      <DependentUpon>AccountSetPerviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\CompressAndDecomporess\CompressAndDecomporessControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\CompressAndDecomporess\CompressAndDecomporessControl.Designer.cs">
+      <DependentUpon>CompressAndDecomporessControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ExtractInsertProperty\ExtractInsertPropertyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ExtractInsertProperty\ExtractInsertPropertyControl.Designer.cs">
+      <DependentUpon>ExtractInsertPropertyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\IntelligentDeploy\DeployVerionItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\IntelligentDeploy\DeployVerionItemControl.Designer.cs">
+      <DependentUpon>DeployVerionItemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\GenerateTemporaryTable\GenerateTemporaryTableControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\GenerateTemporaryTable\GenerateTemporaryTableControl.Designer.cs">
+      <DependentUpon>GenerateTemporaryTableControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\IntelligentDeploy\IntelligentDeployControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\IntelligentDeploy\IntelligentDeployControl.Designer.cs">
+      <DependentUpon>IntelligentDeployControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\LogoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\LogoControl.Designer.cs">
+      <DependentUpon>LogoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\RetrievalTerms\RetrievalTermsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\RetrievalTerms\RetrievalTermsControl.Designer.cs">
+      <DependentUpon>RetrievalTermsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Model\IntelligentDeploy\ImportConfigurationContext.cs" />
+    <Compile Include="Core\Model\IntelligentDeploy\IntelligentDeploySectionBase.cs" />
+    <Compile Include="Core\Model\IntelligentDeploy\ExtractRuntimeResourcesContext.cs" />
+    <Compile Include="Core\GenerateTempoarayTableContext.cs" />
+    <Compile Include="Core\IntelligentDeployContext.cs" />
+    <Compile Include="Core\Model\GenerateTemporaryTable\Metadata\BaseMetadata.cs" />
+    <Compile Include="Core\Model\GenerateTemporaryTable\Metadata\FooterMetadata.cs" />
+    <Compile Include="Core\Model\GenerateTemporaryTable\Metadata\HeaderMetadata.cs" />
+    <Compile Include="Core\Model\GenerateTemporaryTable\Metadata\IndexMetadata.cs" />
+    <Compile Include="Core\Model\GenerateTemporaryTable\Metadata\Interface\ITemporary.cs" />
+    <Compile Include="Core\Model\GenerateTemporaryTable\Metadata\PrimaryKeyMetadata.cs" />
+    <Compile Include="Core\Model\GenerateTemporaryTable\Metadata\PropertyMetadata.cs" />
+    <Compile Include="Core\Model\GenerateTemporaryTable\Metadata\SimplePropertyMetadata.cs" />
+    <Compile Include="Core\Model\GenerateTemporaryTable\Metadata\TemporaryTableMetadata.cs" />
+    <Compile Include="Core\Model\GenerateTemporaryTable\Metadata\TransformMetadata.cs" />
+    <Compile Include="Core\Model\GenerateTemporaryTable\OwnerEx\DataConvertedOwnerEx.cs" />
+    <Compile Include="Core\Model\GenerateTemporaryTable\OwnerEx\DataTypeOwnerEx.cs" />
+    <Compile Include="Core\Model\GenerateTemporaryTable\OwnerEx\DefaultValueOwnerEx.cs" />
+    <Compile Include="Core\Model\GenerateTemporaryTable\OwnerEx\ExceptionOwnerEx.cs" />
+    <Compile Include="Core\Model\GenerateTemporaryTable\OwnerEx\FormatStandardOwnerEx.cs" />
+    <Compile Include="Core\Model\GenerateTemporaryTable\OwnerEx\UtilsOwnerEx.cs" />
+    <Compile Include="Core\RetrievalTermsContext.cs" />
+    <Compile Include="Core\Section\EpIAContextSection.cs" />
+    <Compile Include="Core\Section\GenerateTemporaryTableContextSection.cs" />
+    <Compile Include="Core\Section\IntelligentDeployContextSection.cs" />
+    <Compile Include="Core\Section\RetrievalTermsContextSection.cs" />
+    <Compile Include="Form\IntelligentDeploy\DetailsViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\IntelligentDeploy\DetailsViewForm.designer.cs">
+      <DependentUpon>DetailsViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\IntelligentDeploy\ExtractRuntimeResourcesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\IntelligentDeploy\ExtractRuntimeResourcesForm.Designer.cs">
+      <DependentUpon>ExtractRuntimeResourcesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GenerateTemporaryTable\AlterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GenerateTemporaryTable\AlterForm.designer.cs">
+      <DependentUpon>AlterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GenerateTemporaryTable\ViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GenerateTemporaryTable\ViewForm.designer.cs">
+      <DependentUpon>ViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\GenerateTemporaryTable\StandardExampleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\GenerateTemporaryTable\StandardExampleForm.designer.cs">
+      <DependentUpon>StandardExampleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\IntelligentDeploy\DeployVersionNameEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\IntelligentDeploy\DeployVersionNameEditorForm.Designer.cs">
+      <DependentUpon>DeployVersionNameEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\IntelligentDeploy\DeployVersionSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\IntelligentDeploy\DeployVersionSettingForm.Designer.cs">
+      <DependentUpon>DeployVersionSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\ModuleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\ModuleControl.Designer.cs">
+      <DependentUpon>ModuleControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\EpIAContext.cs" />
+    <Compile Include="Form\IntelligentDeploy\ImportConfigurationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\IntelligentDeploy\ImportConfigurationForm.Designer.cs">
+      <DependentUpon>ImportConfigurationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\ModulesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\ModulesForm.Designer.cs">
+      <DependentUpon>ModulesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Form\SqlServerConnectSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\SqlServerConnectSettingForm.Designer.cs">
+      <DependentUpon>SqlServerConnectSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Worker\CommonWorker.cs" />
+    <Compile Include="Worker\IntelligentDeployWorker.cs" />
+    <EmbeddedResource Include="Control\EscloudIntegrate\EscloudIntegrateControl.resx">
+      <DependentUpon>EscloudIntegrateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\EsCloudIntegrate\FindCustomerForm.resx">
+      <DependentUpon>FindCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\EsCloudIntegrate\EsCloudDbConnectionSettingForm.resx">
+      <DependentUpon>EsCloudDbConnectionSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\IntelligentDeploy\AccountSetPerviewForm.resx">
+      <DependentUpon>AccountSetPerviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\CompressAndDecomporess\CompressAndDecomporessControl.resx">
+      <DependentUpon>CompressAndDecomporessControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ExtractInsertProperty\ExtractInsertPropertyControl.resx">
+      <DependentUpon>ExtractInsertPropertyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\IntelligentDeploy\DeployVerionItemControl.resx">
+      <DependentUpon>DeployVerionItemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\GenerateTemporaryTable\GenerateTemporaryTableControl.resx">
+      <DependentUpon>GenerateTemporaryTableControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\IntelligentDeploy\IntelligentDeployControl.resx">
+      <DependentUpon>IntelligentDeployControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\LogoControl.resx">
+      <DependentUpon>LogoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\RetrievalTerms\RetrievalTermsControl.resx">
+      <DependentUpon>RetrievalTermsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\IntelligentDeploy\DetailsViewForm.resx">
+      <DependentUpon>DetailsViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\IntelligentDeploy\ExtractRuntimeResourcesForm.resx">
+      <DependentUpon>ExtractRuntimeResourcesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\ModuleControl.resx">
+      <DependentUpon>ModuleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GenerateTemporaryTable\AlterForm.resx">
+      <DependentUpon>AlterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GenerateTemporaryTable\ViewForm.resx">
+      <DependentUpon>ViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GenerateTemporaryTable\StandardExampleForm.resx">
+      <DependentUpon>StandardExampleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\IntelligentDeploy\DeployVersionNameEditorForm.resx">
+      <DependentUpon>DeployVersionNameEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\IntelligentDeploy\DeployVersionSettingForm.resx">
+      <DependentUpon>DeployVersionSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ModulesForm.resx">
+      <DependentUpon>ModulesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\IntelligentDeploy\ImportConfigurationForm.resx">
+      <DependentUpon>ImportConfigurationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SqlServerConnectSettingForm.resx">
+      <DependentUpon>SqlServerConnectSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Eproduction.Integrated.Assistant.Common\Eproduction.Integrated.Assistant.Common.csproj">
+      <Project>{dec3f138-1d0c-4f42-bac2-652e18d390cc}</Project>
+      <Name>Eproduction.Integrated.Assistant.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assistant.ico" />
+    <Content Include="Images\advanced.png" />
+    <Content Include="Images\assistant.ico" />
+    <Content Include="Images\bee.png" />
+    <Content Include="Images\beer.png" />
+    <Content Include="Images\clear.png" />
+    <Content Include="Images\code.png" />
+    <Content Include="Images\complie_advanced.png" />
+    <Content Include="Images\compression.png" />
+    <Content Include="Images\compress_larger.png" />
+    <Content Include="Images\compress_small.png" />
+    <Content Include="Images\container.png" />
+    <Content Include="Images\copy.png" />
+    <Content Include="Images\copy_succeed.png" />
+    <Content Include="Images\deploy-plus.png" />
+    <Content Include="Images\deploy.png" />
+    <Content Include="Images\deployement.png" />
+    <Content Include="Images\deploy_advanced.png" />
+    <Content Include="Images\deploy_larger.png" />
+    <Content Include="Images\deploy_small.png" />
+    <Content Include="Images\details.png" />
+    <Content Include="Images\done.png" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\encrypt.png" />
+    <Content Include="Images\EpIA.png" />
+    <Content Include="Images\EPIA_picture_Larger.png" />
+    <Content Include="Images\EPIA_word_Larger.png" />
+    <Content Include="Images\error-provider.ico" />
+    <Content Include="Images\escloud_larger.png" />
+    <Content Include="Images\escloud_small.png" />
+    <Content Include="Images\exit.png" />
+    <Content Include="Images\extract.png" />
+    <Content Include="Images\extract_larger.png" />
+    <Content Include="Images\extract_small.png" />
+    <Content Include="Images\infinity.png" />
+    <Content Include="Images\locate.png" />
+    <Content Include="Images\management.png" />
+    <Content Include="Images\params.png" />
+    <Content Include="Images\plus.png" />
+    <Content Include="Images\retrieval_larger.png" />
+    <Content Include="Images\retrieval_small.png" />
+    <Content Include="Images\setting.png" />
+    <Content Include="Images\sources.png" />
+    <Content Include="Images\specification.png" />
+    <Content Include="Images\temporary_larger.png" />
+    <Content Include="Images\temporary_small.png" />
+    <Content Include="Images\transfer.png" />
+    <Content Include="Images\trush.png" />
+    <Content Include="Images\version .png" />
+    <Content Include="Images\view.png" />
+    <Content Include="Images\word-warp.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
