@@ -35,7 +35,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Images\assistant.ico</ApplicationIcon>
+    <ApplicationIcon>assistant.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -228,104 +228,19 @@
     <Compile Include="Form\SqlServerConnectSettingForm.Designer.cs">
       <DependentUpon>SqlServerConnectSettingForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Worker\CommonWorker.cs" />
-    <Compile Include="Worker\IntelligentDeployWorker.cs" />
-    <EmbeddedResource Include="Control\EscloudIntegrate\EscloudIntegrateControl.resx">
-      <DependentUpon>EscloudIntegrateControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\EsCloudIntegrate\FindCustomerForm.resx">
-      <DependentUpon>FindCustomerForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\EsCloudIntegrate\EsCloudDbConnectionSettingForm.resx">
-      <DependentUpon>EsCloudDbConnectionSettingForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\IntelligentDeploy\AccountSetPerviewForm.resx">
-      <DependentUpon>AccountSetPerviewForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Control\CompressAndDecomporess\CompressAndDecomporessControl.resx">
-      <DependentUpon>CompressAndDecomporessControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Control\ExtractInsertProperty\ExtractInsertPropertyControl.resx">
-      <DependentUpon>ExtractInsertPropertyControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Control\IntelligentDeploy\DeployVerionItemControl.resx">
-      <DependentUpon>DeployVerionItemControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Control\GenerateTemporaryTable\GenerateTemporaryTableControl.resx">
-      <DependentUpon>GenerateTemporaryTableControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Control\IntelligentDeploy\IntelligentDeployControl.resx">
-      <DependentUpon>IntelligentDeployControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Control\LogoControl.resx">
-      <DependentUpon>LogoControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Control\RetrievalTerms\RetrievalTermsControl.resx">
-      <DependentUpon>RetrievalTermsControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\IntelligentDeploy\DetailsViewForm.resx">
-      <DependentUpon>DetailsViewForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\IntelligentDeploy\ExtractRuntimeResourcesForm.resx">
-      <DependentUpon>ExtractRuntimeResourcesForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\AboutForm.resx">
-      <DependentUpon>AboutForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Control\ModuleControl.resx">
-      <DependentUpon>ModuleControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\GenerateTemporaryTable\AlterForm.resx">
-      <DependentUpon>AlterForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\GenerateTemporaryTable\ViewForm.resx">
-      <DependentUpon>ViewForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\GenerateTemporaryTable\StandardExampleForm.resx">
-      <DependentUpon>StandardExampleForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\IntelligentDeploy\DeployVersionNameEditorForm.resx">
-      <DependentUpon>DeployVersionNameEditorForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\IntelligentDeploy\DeployVersionSettingForm.resx">
-      <DependentUpon>DeployVersionSettingForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\ModulesForm.resx">
-      <DependentUpon>ModulesForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\IntelligentDeploy\ImportConfigurationForm.resx">
-      <DependentUpon>ImportConfigurationForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\SqlServerConnectSettingForm.resx">
-      <DependentUpon>SqlServerConnectSettingForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
+    <Compile Include="Worker\CommonWorker.cs" />
+    <Compile Include="Worker\IntelligentDeployWorker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Images\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Eproduction.Integrated.Assistant.Common\Eproduction.Integrated.Assistant.Common.csproj">
@@ -386,6 +301,11 @@
     <Content Include="Images\view.png" />
     <Content Include="Images\word-warp.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

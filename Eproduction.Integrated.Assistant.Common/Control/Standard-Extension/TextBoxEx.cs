@@ -15,7 +15,6 @@ namespace Eproduction.Integrated.Assistant.Common.Control {
         private bool _HotTrack = true;
         private Color _BorderColor = Color.Silver;
         private Color _HotColor = Color.FromArgb(0, 192, 192);
-        private bool _IsMouseOver = false;
 
         [Category("行为")]
         [Description("获得或设置一个值，指示当前鼠标经过控件时控件边框是否发生变化。只在控件的BorderStyle为FixedString时有效")]
@@ -52,14 +51,12 @@ namespace Eproduction.Integrated.Assistant.Common.Control {
             BorderStyle = BorderStyle.FixedSingle;
         }
         protected override void OnMouseMove(MouseEventArgs e) {
-            _IsMouseOver = true;
             if (_HotTrack) {
                 Invalidate();
             }
             base.OnMouseMove(e);
         }
         protected override void OnMouseLeave(EventArgs e) {
-            _IsMouseOver = false;
             if (_HotTrack) {
                 Invalidate();
             }

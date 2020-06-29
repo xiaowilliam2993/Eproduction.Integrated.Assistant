@@ -41,10 +41,15 @@ namespace Eproduction.Integrated.Assistant.Start.Core {
     /// EpIA上下文定义
     /// </summary>
     public class EpIAContext : ISectionService {
+        private IntelligentDeployContext _intelligentDeployContext = null;
+        private GenerateTempoarayTableContext _generateTemparayTableContext = null;
+        private RetrievalTermsContext _retrievalTermsContext = null;
+        private EscloudIntegrateContext _escloudIntegrateContext = null;
+        private SysStatusComponentContainer _statusContainer = null;
         /// <summary>
-        /// 模组元数据定义
+        /// 模组列表
         /// </summary>
-        private IList<Module> _modules = new List<Module> {
+        public IList<Module> Modules { get; } = new List<Module> {
             new Module() {
                 Key = "intelligent_deploy",
                 Text = "E10智能部署",
@@ -103,15 +108,6 @@ namespace Eproduction.Integrated.Assistant.Start.Core {
             //    Type = ModuleType.EscloudIntegrate
             //}
         };
-        private IntelligentDeployContext _intelligentDeployContext = null;
-        private GenerateTempoarayTableContext _generateTemparayTableContext = null;
-        private RetrievalTermsContext _retrievalTermsContext = null;
-        private EscloudIntegrateContext _escloudIntegrateContext = null;
-        private SysStatusComponentContainer _statusContainer = null;
-        /// <summary>
-        /// 模组列表
-        /// </summary>
-        public IList<Module> Modules { get => _modules; }
         /// <summary>
         /// 获取当前工作模组
         /// </summary>
@@ -119,13 +115,12 @@ namespace Eproduction.Integrated.Assistant.Start.Core {
         /// <summary>
         /// 获取载入模组
         /// </summary>
-        public string VisibleModules { get => string.Join(",", _modules.Where(_ => _.Visible).Select(__ => __.Key)); }
+        public string VisibleModules { get => string.Join(",", Modules.Where(_ => _.Visible).Select(__ => __.Key)); }
         /// <summary>
         /// 保存载入模组设置
         /// </summary>
         public void SaveModulesSetting() {
-            Configuration configuration = null;
-            EpIAContextSection EpIASection = GetEpIAContextSection(out configuration);
+            EpIAContextSection EpIASection = GetEpIAContextSection(out Configuration configuration);
             EpIASection.Settings.Modules = VisibleModules;
             configuration.Save();
         }
@@ -133,8 +128,7 @@ namespace Eproduction.Integrated.Assistant.Start.Core {
         /// 保存选择模组设置
         /// </summary>
         public void SaveSelectedModule() {
-            Configuration configuration = null;
-            EpIAContextSection EpIASection = GetEpIAContextSection(out configuration);
+            EpIAContextSection EpIASection = GetEpIAContextSection(out Configuration configuration);
             EpIASection.Settings.SelectedModule = SelectedModule.Key;
             configuration.Save();
         }
