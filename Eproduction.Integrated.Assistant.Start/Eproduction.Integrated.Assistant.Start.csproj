@@ -302,6 +302,60 @@
     <Content Include="Images\word-warp.png" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Control\CompressAndDecomporess\CompressAndDecomporessControl.resx">
+      <DependentUpon>CompressAndDecomporessControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\GenerateTemporaryTable\GenerateTemporaryTableControl.resx">
+      <DependentUpon>GenerateTemporaryTableControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\IntelligentDeploy\IntelligentDeployControl.resx">
+      <DependentUpon>IntelligentDeployControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\RetrievalTerms\RetrievalTermsControl.resx">
+      <DependentUpon>RetrievalTermsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\EsCloudIntegrate\EsCloudDbConnectionSettingForm.resx">
+      <DependentUpon>EsCloudDbConnectionSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\EsCloudIntegrate\FindCustomerForm.resx">
+      <DependentUpon>FindCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GenerateTemporaryTable\StandardExampleForm.resx">
+      <DependentUpon>StandardExampleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\GenerateTemporaryTable\ViewForm.resx">
+      <DependentUpon>ViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\IntelligentDeploy\AccountSetPerviewForm.resx">
+      <DependentUpon>AccountSetPerviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\IntelligentDeploy\DeployVersionNameEditorForm.resx">
+      <DependentUpon>DeployVersionNameEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\IntelligentDeploy\DeployVersionSettingForm.resx">
+      <DependentUpon>DeployVersionSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\IntelligentDeploy\DetailsViewForm.resx">
+      <DependentUpon>DetailsViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\IntelligentDeploy\ExtractRuntimeResourcesForm.resx">
+      <DependentUpon>ExtractRuntimeResourcesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\IntelligentDeploy\ImportConfigurationForm.resx">
+      <DependentUpon>ImportConfigurationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\ModulesForm.resx">
+      <DependentUpon>ModulesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\SqlServerConnectSettingForm.resx">
+      <DependentUpon>SqlServerConnectSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

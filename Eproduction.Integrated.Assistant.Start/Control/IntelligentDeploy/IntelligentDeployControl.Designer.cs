@@ -398,7 +398,7 @@
             this.rdoBusinessPackage.AutoSize = true;
             this.rdoBusinessPackage.Location = new System.Drawing.Point(261, 20);
             this.rdoBusinessPackage.Name = "rdoBusinessPackage";
-            this.rdoBusinessPackage.Size = new System.Drawing.Size(62, 21);
+            this.rdoBusinessPackage.Size = new System.Drawing.Size(74, 21);
             this.rdoBusinessPackage.TabIndex = 3;
             this.rdoBusinessPackage.TabStop = true;
             this.rdoBusinessPackage.Text = "服务商品";
@@ -1147,7 +1147,6 @@
             // 
             this.ErrorProvider.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
             this.ErrorProvider.ContainerControl = this;
-            this.ErrorProvider.Icon = ((System.Drawing.Icon)(resources.GetObject("ErrorProvider.Icon")));
             // 
             // ExtractWorker
             // 

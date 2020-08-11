@@ -100,6 +100,10 @@ namespace Eproduction.Integrated.Assistant.Start {
             // rdoCustomization
             //
             rdoCustomization.CheckedChanged += RadioCheckedChangedHandler;
+            //
+            // rdoBusinessPackage
+            //
+            rdoBusinessPackage.CheckedChanged += RadioCheckedChangedHandler;
         }
 
         private void ExtractRuntimeResourcesForm_Load(object sender, EventArgs e) {
@@ -120,6 +124,9 @@ namespace Eproduction.Integrated.Assistant.Start {
                     break;
                 case DeployTarget.Customization:
                     rdoCustomization.Checked = true;
+                    break;
+                case DeployTarget.BusinessPackage:
+                    rdoBusinessPackage.Checked = true;
                     break;
             }
         }

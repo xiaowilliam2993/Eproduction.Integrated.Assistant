@@ -37,22 +37,22 @@
             this.pageQueryableDefinition = new System.Windows.Forms.TabPage();
             this.tabQueryableDefinition = new System.Windows.Forms.TabControl();
             this.pageCustomerInfo = new System.Windows.Forms.TabPage();
-            this.pageDeviceInfo = new System.Windows.Forms.TabPage();
-            this.pageSubscription = new System.Windows.Forms.TabPage();
-            this.pageMQInfo = new System.Windows.Forms.TabPage();
-            this.pageCustomizeReportData = new System.Windows.Forms.TabPage();
-            this.pagePublishInfo = new System.Windows.Forms.TabPage();
-            this.pageBrowseHistory = new System.Windows.Forms.TabPage();
-            this.pageScreens = new System.Windows.Forms.TabPage();
-            this.pageTrigger = new System.Windows.Forms.TabPage();
             this.tboxQueryDefinitionOfCustomerInfo = new System.Windows.Forms.TextBox();
+            this.pageDeviceInfo = new System.Windows.Forms.TabPage();
             this.tboxQueryableDefinitionOfDeviceInfo = new System.Windows.Forms.TextBox();
+            this.pageSubscription = new System.Windows.Forms.TabPage();
             this.tboxQueryableDefinitionOfSubscription = new System.Windows.Forms.TextBox();
+            this.pageMQInfo = new System.Windows.Forms.TabPage();
             this.tboxQueryableDefinitionOfMQInfo = new System.Windows.Forms.TextBox();
+            this.pageCustomizeReportData = new System.Windows.Forms.TabPage();
             this.tboxQueryableDefinitionOfCustomizeReportData = new System.Windows.Forms.TextBox();
+            this.pagePublishInfo = new System.Windows.Forms.TabPage();
             this.tboxQueryableDefinitionOfPublishInfo = new System.Windows.Forms.TextBox();
+            this.pageBrowseHistory = new System.Windows.Forms.TabPage();
             this.tboxQueryableDefinitionOfBrowseHistory = new System.Windows.Forms.TextBox();
+            this.pageScreens = new System.Windows.Forms.TabPage();
             this.tboxQueryableDefitionOfScreens = new System.Windows.Forms.TextBox();
+            this.pageTrigger = new System.Windows.Forms.TabPage();
             this.tboxQueryableDefinitionOfTrigger = new System.Windows.Forms.TextBox();
             this.tabContainer.SuspendLayout();
             this.pageDbConnectionSetting.SuspendLayout();
@@ -216,6 +216,16 @@
             this.pageCustomerInfo.TabIndex = 0;
             this.pageCustomerInfo.Text = "客户信息";
             // 
+            // tboxQueryDefinitionOfCustomerInfo
+            // 
+            this.tboxQueryDefinitionOfCustomerInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tboxQueryDefinitionOfCustomerInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tboxQueryDefinitionOfCustomerInfo.Location = new System.Drawing.Point(3, 3);
+            this.tboxQueryDefinitionOfCustomerInfo.Multiline = true;
+            this.tboxQueryDefinitionOfCustomerInfo.Name = "tboxQueryDefinitionOfCustomerInfo";
+            this.tboxQueryDefinitionOfCustomerInfo.Size = new System.Drawing.Size(644, 180);
+            this.tboxQueryDefinitionOfCustomerInfo.TabIndex = 0;
+            // 
             // pageDeviceInfo
             // 
             this.pageDeviceInfo.BackColor = System.Drawing.SystemColors.Control;
@@ -226,6 +236,16 @@
             this.pageDeviceInfo.Size = new System.Drawing.Size(650, 186);
             this.pageDeviceInfo.TabIndex = 1;
             this.pageDeviceInfo.Text = "设备信息";
+            // 
+            // tboxQueryableDefinitionOfDeviceInfo
+            // 
+            this.tboxQueryableDefinitionOfDeviceInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tboxQueryableDefinitionOfDeviceInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tboxQueryableDefinitionOfDeviceInfo.Location = new System.Drawing.Point(3, 3);
+            this.tboxQueryableDefinitionOfDeviceInfo.Multiline = true;
+            this.tboxQueryableDefinitionOfDeviceInfo.Name = "tboxQueryableDefinitionOfDeviceInfo";
+            this.tboxQueryableDefinitionOfDeviceInfo.Size = new System.Drawing.Size(644, 180);
+            this.tboxQueryableDefinitionOfDeviceInfo.TabIndex = 1;
             // 
             // pageSubscription
             // 
@@ -238,6 +258,16 @@
             this.pageSubscription.TabIndex = 2;
             this.pageSubscription.Text = "发送设定";
             // 
+            // tboxQueryableDefinitionOfSubscription
+            // 
+            this.tboxQueryableDefinitionOfSubscription.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tboxQueryableDefinitionOfSubscription.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tboxQueryableDefinitionOfSubscription.Location = new System.Drawing.Point(3, 3);
+            this.tboxQueryableDefinitionOfSubscription.Multiline = true;
+            this.tboxQueryableDefinitionOfSubscription.Name = "tboxQueryableDefinitionOfSubscription";
+            this.tboxQueryableDefinitionOfSubscription.Size = new System.Drawing.Size(644, 180);
+            this.tboxQueryableDefinitionOfSubscription.TabIndex = 2;
+            // 
             // pageMQInfo
             // 
             this.pageMQInfo.BackColor = System.Drawing.SystemColors.Control;
@@ -248,6 +278,16 @@
             this.pageMQInfo.Size = new System.Drawing.Size(650, 186);
             this.pageMQInfo.TabIndex = 3;
             this.pageMQInfo.Text = "消息队列";
+            // 
+            // tboxQueryableDefinitionOfMQInfo
+            // 
+            this.tboxQueryableDefinitionOfMQInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tboxQueryableDefinitionOfMQInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tboxQueryableDefinitionOfMQInfo.Location = new System.Drawing.Point(3, 3);
+            this.tboxQueryableDefinitionOfMQInfo.Multiline = true;
+            this.tboxQueryableDefinitionOfMQInfo.Name = "tboxQueryableDefinitionOfMQInfo";
+            this.tboxQueryableDefinitionOfMQInfo.Size = new System.Drawing.Size(644, 180);
+            this.tboxQueryableDefinitionOfMQInfo.TabIndex = 2;
             // 
             // pageCustomizeReportData
             // 
@@ -260,6 +300,16 @@
             this.pageCustomizeReportData.TabIndex = 4;
             this.pageCustomizeReportData.Text = "报告数据";
             // 
+            // tboxQueryableDefinitionOfCustomizeReportData
+            // 
+            this.tboxQueryableDefinitionOfCustomizeReportData.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tboxQueryableDefinitionOfCustomizeReportData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tboxQueryableDefinitionOfCustomizeReportData.Location = new System.Drawing.Point(3, 3);
+            this.tboxQueryableDefinitionOfCustomizeReportData.Multiline = true;
+            this.tboxQueryableDefinitionOfCustomizeReportData.Name = "tboxQueryableDefinitionOfCustomizeReportData";
+            this.tboxQueryableDefinitionOfCustomizeReportData.Size = new System.Drawing.Size(644, 180);
+            this.tboxQueryableDefinitionOfCustomizeReportData.TabIndex = 2;
+            // 
             // pagePublishInfo
             // 
             this.pagePublishInfo.BackColor = System.Drawing.SystemColors.Control;
@@ -270,6 +320,16 @@
             this.pagePublishInfo.Size = new System.Drawing.Size(650, 186);
             this.pagePublishInfo.TabIndex = 5;
             this.pagePublishInfo.Text = "发送记录";
+            // 
+            // tboxQueryableDefinitionOfPublishInfo
+            // 
+            this.tboxQueryableDefinitionOfPublishInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tboxQueryableDefinitionOfPublishInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tboxQueryableDefinitionOfPublishInfo.Location = new System.Drawing.Point(3, 3);
+            this.tboxQueryableDefinitionOfPublishInfo.Multiline = true;
+            this.tboxQueryableDefinitionOfPublishInfo.Name = "tboxQueryableDefinitionOfPublishInfo";
+            this.tboxQueryableDefinitionOfPublishInfo.Size = new System.Drawing.Size(644, 180);
+            this.tboxQueryableDefinitionOfPublishInfo.TabIndex = 2;
             // 
             // pageBrowseHistory
             // 
@@ -282,6 +342,16 @@
             this.pageBrowseHistory.TabIndex = 6;
             this.pageBrowseHistory.Text = "浏览历史";
             // 
+            // tboxQueryableDefinitionOfBrowseHistory
+            // 
+            this.tboxQueryableDefinitionOfBrowseHistory.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tboxQueryableDefinitionOfBrowseHistory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tboxQueryableDefinitionOfBrowseHistory.Location = new System.Drawing.Point(3, 3);
+            this.tboxQueryableDefinitionOfBrowseHistory.Multiline = true;
+            this.tboxQueryableDefinitionOfBrowseHistory.Name = "tboxQueryableDefinitionOfBrowseHistory";
+            this.tboxQueryableDefinitionOfBrowseHistory.Size = new System.Drawing.Size(644, 180);
+            this.tboxQueryableDefinitionOfBrowseHistory.TabIndex = 2;
+            // 
             // pageScreens
             // 
             this.pageScreens.BackColor = System.Drawing.SystemColors.Control;
@@ -293,6 +363,16 @@
             this.pageScreens.TabIndex = 7;
             this.pageScreens.Text = "报告设计";
             // 
+            // tboxQueryableDefitionOfScreens
+            // 
+            this.tboxQueryableDefitionOfScreens.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tboxQueryableDefitionOfScreens.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tboxQueryableDefitionOfScreens.Location = new System.Drawing.Point(3, 3);
+            this.tboxQueryableDefitionOfScreens.Multiline = true;
+            this.tboxQueryableDefitionOfScreens.Name = "tboxQueryableDefitionOfScreens";
+            this.tboxQueryableDefitionOfScreens.Size = new System.Drawing.Size(644, 180);
+            this.tboxQueryableDefitionOfScreens.TabIndex = 2;
+            // 
             // pageTrigger
             // 
             this.pageTrigger.BackColor = System.Drawing.SystemColors.Control;
@@ -303,86 +383,6 @@
             this.pageTrigger.Size = new System.Drawing.Size(650, 186);
             this.pageTrigger.TabIndex = 8;
             this.pageTrigger.Text = "定时发送";
-            // 
-            // tboxQueryDefinitionOfCustomerInfo
-            // 
-            this.tboxQueryDefinitionOfCustomerInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tboxQueryDefinitionOfCustomerInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tboxQueryDefinitionOfCustomerInfo.Location = new System.Drawing.Point(3, 3);
-            this.tboxQueryDefinitionOfCustomerInfo.Multiline = true;
-            this.tboxQueryDefinitionOfCustomerInfo.Name = "tboxQueryDefinitionOfCustomerInfo";
-            this.tboxQueryDefinitionOfCustomerInfo.Size = new System.Drawing.Size(644, 180);
-            this.tboxQueryDefinitionOfCustomerInfo.TabIndex = 0;
-            // 
-            // tboxQueryableDefinitionOfDeviceInfo
-            // 
-            this.tboxQueryableDefinitionOfDeviceInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tboxQueryableDefinitionOfDeviceInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tboxQueryableDefinitionOfDeviceInfo.Location = new System.Drawing.Point(3, 3);
-            this.tboxQueryableDefinitionOfDeviceInfo.Multiline = true;
-            this.tboxQueryableDefinitionOfDeviceInfo.Name = "tboxQueryableDefinitionOfDeviceInfo";
-            this.tboxQueryableDefinitionOfDeviceInfo.Size = new System.Drawing.Size(644, 180);
-            this.tboxQueryableDefinitionOfDeviceInfo.TabIndex = 1;
-            // 
-            // tboxQueryableDefinitionOfSubscription
-            // 
-            this.tboxQueryableDefinitionOfSubscription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tboxQueryableDefinitionOfSubscription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tboxQueryableDefinitionOfSubscription.Location = new System.Drawing.Point(3, 3);
-            this.tboxQueryableDefinitionOfSubscription.Multiline = true;
-            this.tboxQueryableDefinitionOfSubscription.Name = "tboxQueryableDefinitionOfSubscription";
-            this.tboxQueryableDefinitionOfSubscription.Size = new System.Drawing.Size(644, 180);
-            this.tboxQueryableDefinitionOfSubscription.TabIndex = 2;
-            // 
-            // tboxQueryableDefinitionOfMQInfo
-            // 
-            this.tboxQueryableDefinitionOfMQInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tboxQueryableDefinitionOfMQInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tboxQueryableDefinitionOfMQInfo.Location = new System.Drawing.Point(3, 3);
-            this.tboxQueryableDefinitionOfMQInfo.Multiline = true;
-            this.tboxQueryableDefinitionOfMQInfo.Name = "tboxQueryableDefinitionOfMQInfo";
-            this.tboxQueryableDefinitionOfMQInfo.Size = new System.Drawing.Size(644, 180);
-            this.tboxQueryableDefinitionOfMQInfo.TabIndex = 2;
-            // 
-            // tboxQueryableDefinitionOfCustomizeReportData
-            // 
-            this.tboxQueryableDefinitionOfCustomizeReportData.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tboxQueryableDefinitionOfCustomizeReportData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tboxQueryableDefinitionOfCustomizeReportData.Location = new System.Drawing.Point(3, 3);
-            this.tboxQueryableDefinitionOfCustomizeReportData.Multiline = true;
-            this.tboxQueryableDefinitionOfCustomizeReportData.Name = "tboxQueryableDefinitionOfCustomizeReportData";
-            this.tboxQueryableDefinitionOfCustomizeReportData.Size = new System.Drawing.Size(644, 180);
-            this.tboxQueryableDefinitionOfCustomizeReportData.TabIndex = 2;
-            // 
-            // tboxQueryableDefinitionOfPublishInfo
-            // 
-            this.tboxQueryableDefinitionOfPublishInfo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tboxQueryableDefinitionOfPublishInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tboxQueryableDefinitionOfPublishInfo.Location = new System.Drawing.Point(3, 3);
-            this.tboxQueryableDefinitionOfPublishInfo.Multiline = true;
-            this.tboxQueryableDefinitionOfPublishInfo.Name = "tboxQueryableDefinitionOfPublishInfo";
-            this.tboxQueryableDefinitionOfPublishInfo.Size = new System.Drawing.Size(644, 180);
-            this.tboxQueryableDefinitionOfPublishInfo.TabIndex = 2;
-            // 
-            // tboxQueryableDefinitionOfBrowseHistory
-            // 
-            this.tboxQueryableDefinitionOfBrowseHistory.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tboxQueryableDefinitionOfBrowseHistory.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tboxQueryableDefinitionOfBrowseHistory.Location = new System.Drawing.Point(3, 3);
-            this.tboxQueryableDefinitionOfBrowseHistory.Multiline = true;
-            this.tboxQueryableDefinitionOfBrowseHistory.Name = "tboxQueryableDefinitionOfBrowseHistory";
-            this.tboxQueryableDefinitionOfBrowseHistory.Size = new System.Drawing.Size(644, 180);
-            this.tboxQueryableDefinitionOfBrowseHistory.TabIndex = 2;
-            // 
-            // tboxQueryableDefitionOfScreens
-            // 
-            this.tboxQueryableDefitionOfScreens.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tboxQueryableDefitionOfScreens.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tboxQueryableDefitionOfScreens.Location = new System.Drawing.Point(3, 3);
-            this.tboxQueryableDefitionOfScreens.Multiline = true;
-            this.tboxQueryableDefitionOfScreens.Name = "tboxQueryableDefitionOfScreens";
-            this.tboxQueryableDefitionOfScreens.Size = new System.Drawing.Size(644, 180);
-            this.tboxQueryableDefitionOfScreens.TabIndex = 2;
             // 
             // tboxQueryableDefinitionOfTrigger
             // 

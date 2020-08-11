@@ -44,6 +44,7 @@
             this.rdoCustomization = new System.Windows.Forms.RadioButton();
             this.rdoIndustry = new System.Windows.Forms.RadioButton();
             this.rdoBase = new System.Windows.Forms.RadioButton();
+            this.rdoBusinessPackage = new System.Windows.Forms.RadioButton();
             this.pnlFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
@@ -178,7 +179,6 @@
             // 
             this.ErrorProvider.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
             this.ErrorProvider.ContainerControl = this;
-            this.ErrorProvider.Icon = ((System.Drawing.Icon)(resources.GetObject("ErrorProvider.Icon")));
             // 
             // gboxTargets
             // 
@@ -207,6 +207,7 @@
             // 
             this.gboxDeployVersionTargets.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.gboxDeployVersionTargets.Controls.Add(this.rdoBusinessPackage);
             this.gboxDeployVersionTargets.Controls.Add(this.rdoCustomization);
             this.gboxDeployVersionTargets.Controls.Add(this.rdoIndustry);
             this.gboxDeployVersionTargets.Controls.Add(this.rdoBase);
@@ -252,6 +253,18 @@
             this.rdoBase.Tag = "0";
             this.rdoBase.Text = "基版";
             this.rdoBase.UseVisualStyleBackColor = true;
+            // 
+            // rdoBusinessPackage
+            // 
+            this.rdoBusinessPackage.AutoSize = true;
+            this.rdoBusinessPackage.Location = new System.Drawing.Point(256, 20);
+            this.rdoBusinessPackage.Name = "rdoBusinessPackage";
+            this.rdoBusinessPackage.Size = new System.Drawing.Size(74, 21);
+            this.rdoBusinessPackage.TabIndex = 10;
+            this.rdoBusinessPackage.TabStop = true;
+            this.rdoBusinessPackage.Tag = "3";
+            this.rdoBusinessPackage.Text = "服务商品";
+            this.rdoBusinessPackage.UseVisualStyleBackColor = true;
             // 
             // ExtractRuntimeResourcesForm
             // 
@@ -312,5 +325,6 @@
         private System.Windows.Forms.RadioButton rdoCustomization;
         private System.Windows.Forms.RadioButton rdoIndustry;
         private System.Windows.Forms.RadioButton rdoBase;
+        private System.Windows.Forms.RadioButton rdoBusinessPackage;
     }
 }

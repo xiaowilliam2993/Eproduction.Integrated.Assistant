@@ -30,24 +30,24 @@
             this.tabContainer = new System.Windows.Forms.TabControl();
             this.pageBaseParamsSetting = new System.Windows.Forms.TabPage();
             this.cboxEnabledFuzzyQuery = new System.Windows.Forms.CheckBox();
+            this.tboxChsEntry = new Eproduction.Integrated.Assistant.Common.Control.TextBoxEx();
             this.lblChsEntryTitle = new System.Windows.Forms.Label();
+            this.pageAdvancesSetting = new System.Windows.Forms.TabPage();
+            this.cboxDisplayPassword = new System.Windows.Forms.CheckBox();
+            this.lnkModifiedConnectionSetting = new System.Windows.Forms.LinkLabel();
+            this.lblDbConnectionString = new System.Windows.Forms.Label();
+            this.lblDbConnectionStringTitle = new System.Windows.Forms.Label();
             this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.dgvEntries = new System.Windows.Forms.DataGridView();
-            this.pageAdvancesSetting = new System.Windows.Forms.TabPage();
-            this.lblDbConnectionStringTitle = new System.Windows.Forms.Label();
-            this.lblDbConnectionString = new System.Windows.Forms.Label();
-            this.lnkModifiedConnectionSetting = new System.Windows.Forms.LinkLabel();
             this.BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            this.cboxDisplayPassword = new System.Windows.Forms.CheckBox();
             this.pnlWorkFlow = new Eproduction.Integrated.Assistant.Common.Control.PanelEx();
             this.btnQuery = new Eproduction.Integrated.Assistant.Common.Control.ButtonEx();
-            this.tboxChsEntry = new Eproduction.Integrated.Assistant.Common.Control.TextBoxEx();
             this.queryWorker = new System.ComponentModel.BackgroundWorker();
             this.tabContainer.SuspendLayout();
             this.pageBaseParamsSetting.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEntries)).BeginInit();
             this.pageAdvancesSetting.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEntries)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).BeginInit();
             this.pnlWorkFlow.SuspendLayout();
@@ -90,6 +90,18 @@
             this.cboxEnabledFuzzyQuery.Text = "启用模糊查询";
             this.cboxEnabledFuzzyQuery.UseVisualStyleBackColor = true;
             // 
+            // tboxChsEntry
+            // 
+            this.tboxChsEntry.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tboxChsEntry.BorderColor = System.Drawing.Color.Silver;
+            this.tboxChsEntry.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tboxChsEntry.HotColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.tboxChsEntry.Location = new System.Drawing.Point(84, 17);
+            this.tboxChsEntry.Name = "tboxChsEntry";
+            this.tboxChsEntry.Size = new System.Drawing.Size(521, 23);
+            this.tboxChsEntry.TabIndex = 2;
+            // 
             // lblChsEntryTitle
             // 
             this.lblChsEntryTitle.AutoSize = true;
@@ -98,6 +110,69 @@
             this.lblChsEntryTitle.Size = new System.Drawing.Size(56, 17);
             this.lblChsEntryTitle.TabIndex = 1;
             this.lblChsEntryTitle.Text = "中文词条";
+            // 
+            // pageAdvancesSetting
+            // 
+            this.pageAdvancesSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.pageAdvancesSetting.Controls.Add(this.cboxDisplayPassword);
+            this.pageAdvancesSetting.Controls.Add(this.lnkModifiedConnectionSetting);
+            this.pageAdvancesSetting.Controls.Add(this.lblDbConnectionString);
+            this.pageAdvancesSetting.Controls.Add(this.lblDbConnectionStringTitle);
+            this.pageAdvancesSetting.ImageKey = "advanced.png";
+            this.pageAdvancesSetting.Location = new System.Drawing.Point(4, 26);
+            this.pageAdvancesSetting.Name = "pageAdvancesSetting";
+            this.pageAdvancesSetting.Padding = new System.Windows.Forms.Padding(3);
+            this.pageAdvancesSetting.Size = new System.Drawing.Size(633, 87);
+            this.pageAdvancesSetting.TabIndex = 1;
+            this.pageAdvancesSetting.Text = "高级选项";
+            // 
+            // cboxDisplayPassword
+            // 
+            this.cboxDisplayPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cboxDisplayPassword.AutoSize = true;
+            this.cboxDisplayPassword.Location = new System.Drawing.Point(550, 35);
+            this.cboxDisplayPassword.Name = "cboxDisplayPassword";
+            this.cboxDisplayPassword.Size = new System.Drawing.Size(75, 21);
+            this.cboxDisplayPassword.TabIndex = 3;
+            this.cboxDisplayPassword.Text = "显示密码";
+            this.cboxDisplayPassword.UseVisualStyleBackColor = true;
+            // 
+            // lnkModifiedConnectionSetting
+            // 
+            this.lnkModifiedConnectionSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lnkModifiedConnectionSetting.AutoSize = true;
+            this.lnkModifiedConnectionSetting.Image = global::Eproduction.Integrated.Assistant.Start.Properties.Resources.edit;
+            this.lnkModifiedConnectionSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lnkModifiedConnectionSetting.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.lnkModifiedConnectionSetting.Location = new System.Drawing.Point(547, 9);
+            this.lnkModifiedConnectionSetting.Name = "lnkModifiedConnectionSetting";
+            this.lnkModifiedConnectionSetting.Size = new System.Drawing.Size(48, 17);
+            this.lnkModifiedConnectionSetting.TabIndex = 2;
+            this.lnkModifiedConnectionSetting.TabStop = true;
+            this.lnkModifiedConnectionSetting.Text = "    修改";
+            this.lnkModifiedConnectionSetting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lnkModifiedConnectionSetting.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkModifiedConnectionSetting_LinkClicked);
+            // 
+            // lblDbConnectionString
+            // 
+            this.lblDbConnectionString.AutoSize = true;
+            this.lblDbConnectionString.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblDbConnectionString.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblDbConnectionString.Location = new System.Drawing.Point(15, 36);
+            this.lblDbConnectionString.Name = "lblDbConnectionString";
+            this.lblDbConnectionString.Size = new System.Drawing.Size(466, 17);
+            this.lblDbConnectionString.TabIndex = 1;
+            this.lblDbConnectionString.Text = "data source={ip};initial catalog={E10_DB};user id=sa;password={password}";
+            // 
+            // lblDbConnectionStringTitle
+            // 
+            this.lblDbConnectionStringTitle.AutoSize = true;
+            this.lblDbConnectionStringTitle.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblDbConnectionStringTitle.Location = new System.Drawing.Point(15, 9);
+            this.lblDbConnectionStringTitle.Name = "lblDbConnectionStringTitle";
+            this.lblDbConnectionStringTitle.Size = new System.Drawing.Size(110, 17);
+            this.lblDbConnectionStringTitle.TabIndex = 0;
+            this.lblDbConnectionStringTitle.Text = ">>数据库连接设置";
             // 
             // ImageList
             // 
@@ -137,73 +212,9 @@
             this.dgvEntries.Size = new System.Drawing.Size(818, 280);
             this.dgvEntries.TabIndex = 7;
             // 
-            // pageAdvancesSetting
-            // 
-            this.pageAdvancesSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.pageAdvancesSetting.Controls.Add(this.cboxDisplayPassword);
-            this.pageAdvancesSetting.Controls.Add(this.lnkModifiedConnectionSetting);
-            this.pageAdvancesSetting.Controls.Add(this.lblDbConnectionString);
-            this.pageAdvancesSetting.Controls.Add(this.lblDbConnectionStringTitle);
-            this.pageAdvancesSetting.ImageKey = "advanced.png";
-            this.pageAdvancesSetting.Location = new System.Drawing.Point(4, 26);
-            this.pageAdvancesSetting.Name = "pageAdvancesSetting";
-            this.pageAdvancesSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.pageAdvancesSetting.Size = new System.Drawing.Size(633, 87);
-            this.pageAdvancesSetting.TabIndex = 1;
-            this.pageAdvancesSetting.Text = "高级选项";
-            // 
-            // lblDbConnectionStringTitle
-            // 
-            this.lblDbConnectionStringTitle.AutoSize = true;
-            this.lblDbConnectionStringTitle.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblDbConnectionStringTitle.Location = new System.Drawing.Point(15, 9);
-            this.lblDbConnectionStringTitle.Name = "lblDbConnectionStringTitle";
-            this.lblDbConnectionStringTitle.Size = new System.Drawing.Size(110, 17);
-            this.lblDbConnectionStringTitle.TabIndex = 0;
-            this.lblDbConnectionStringTitle.Text = ">>数据库连接设置";
-            // 
-            // lblDbConnectionString
-            // 
-            this.lblDbConnectionString.AutoSize = true;
-            this.lblDbConnectionString.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblDbConnectionString.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblDbConnectionString.Location = new System.Drawing.Point(15, 36);
-            this.lblDbConnectionString.Name = "lblDbConnectionString";
-            this.lblDbConnectionString.Size = new System.Drawing.Size(466, 17);
-            this.lblDbConnectionString.TabIndex = 1;
-            this.lblDbConnectionString.Text = "data source={ip};initial catalog={E10_DB};user id=sa;password={password}";
-            // 
-            // lnkModifiedConnectionSetting
-            // 
-            this.lnkModifiedConnectionSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lnkModifiedConnectionSetting.AutoSize = true;
-            this.lnkModifiedConnectionSetting.Image = global::Eproduction.Integrated.Assistant.Start.Properties.Resources.edit;
-            this.lnkModifiedConnectionSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lnkModifiedConnectionSetting.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.lnkModifiedConnectionSetting.Location = new System.Drawing.Point(547, 9);
-            this.lnkModifiedConnectionSetting.Name = "lnkModifiedConnectionSetting";
-            this.lnkModifiedConnectionSetting.Size = new System.Drawing.Size(48, 17);
-            this.lnkModifiedConnectionSetting.TabIndex = 2;
-            this.lnkModifiedConnectionSetting.TabStop = true;
-            this.lnkModifiedConnectionSetting.Text = "    修改";
-            this.lnkModifiedConnectionSetting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lnkModifiedConnectionSetting.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkModifiedConnectionSetting_LinkClicked);
-            // 
             // ErrorProvider
             // 
             this.ErrorProvider.ContainerControl = this;
-            this.ErrorProvider.Icon = ((System.Drawing.Icon)(resources.GetObject("ErrorProvider.Icon")));
-            // 
-            // cboxDisplayPassword
-            // 
-            this.cboxDisplayPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cboxDisplayPassword.AutoSize = true;
-            this.cboxDisplayPassword.Location = new System.Drawing.Point(550, 35);
-            this.cboxDisplayPassword.Name = "cboxDisplayPassword";
-            this.cboxDisplayPassword.Size = new System.Drawing.Size(75, 21);
-            this.cboxDisplayPassword.TabIndex = 3;
-            this.cboxDisplayPassword.Text = "显示密码";
-            this.cboxDisplayPassword.UseVisualStyleBackColor = true;
             // 
             // pnlWorkFlow
             // 
@@ -231,18 +242,6 @@
             this.btnQuery.UseVisualStyleBackColor = false;
             this.btnQuery.Click += new System.EventHandler(this.btnQuery_Click);
             // 
-            // tboxChsEntry
-            // 
-            this.tboxChsEntry.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tboxChsEntry.BorderColor = System.Drawing.Color.Silver;
-            this.tboxChsEntry.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tboxChsEntry.HotColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.tboxChsEntry.Location = new System.Drawing.Point(84, 17);
-            this.tboxChsEntry.Name = "tboxChsEntry";
-            this.tboxChsEntry.Size = new System.Drawing.Size(521, 23);
-            this.tboxChsEntry.TabIndex = 2;
-            // 
             // queryWorker
             // 
             this.queryWorker.WorkerReportsProgress = true;
@@ -263,9 +262,9 @@
             this.tabContainer.ResumeLayout(false);
             this.pageBaseParamsSetting.ResumeLayout(false);
             this.pageBaseParamsSetting.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEntries)).EndInit();
             this.pageAdvancesSetting.ResumeLayout(false);
             this.pageAdvancesSetting.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEntries)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider)).EndInit();
             this.pnlWorkFlow.ResumeLayout(false);
