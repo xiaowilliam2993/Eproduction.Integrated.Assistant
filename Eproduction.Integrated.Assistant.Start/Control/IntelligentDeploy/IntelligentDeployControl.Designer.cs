@@ -79,7 +79,6 @@
             this.tboxServerParams = new Eproduction.Integrated.Assistant.Common.Control.TextBoxEx();
             this.lblClientParams = new System.Windows.Forms.Label();
             this.lblServerParams = new System.Windows.Forms.Label();
-            this.pageEsClientEnvrionmentSetting = new System.Windows.Forms.TabPage();
             this.pageJoinCMMangement = new System.Windows.Forms.TabPage();
             this.tabJoinCMMangement = new System.Windows.Forms.TabControl();
             this.pageDeployServerResources = new System.Windows.Forms.TabPage();
@@ -606,7 +605,6 @@
             this.tabEnvrionmentSetting.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabEnvrionmentSetting.Controls.Add(this.pageE10EnvrionmentSetting);
-            this.tabEnvrionmentSetting.Controls.Add(this.pageEsClientEnvrionmentSetting);
             this.tabEnvrionmentSetting.Location = new System.Drawing.Point(3, 3);
             this.tabEnvrionmentSetting.Name = "tabEnvrionmentSetting";
             this.tabEnvrionmentSetting.SelectedIndex = 0;
@@ -807,16 +805,6 @@
             this.lblServerParams.Size = new System.Drawing.Size(53, 17);
             this.lblServerParams.TabIndex = 0;
             this.lblServerParams.Text = "SERVER";
-            // 
-            // pageEsClientEnvrionmentSetting
-            // 
-            this.pageEsClientEnvrionmentSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.pageEsClientEnvrionmentSetting.Location = new System.Drawing.Point(4, 26);
-            this.pageEsClientEnvrionmentSetting.Name = "pageEsClientEnvrionmentSetting";
-            this.pageEsClientEnvrionmentSetting.Padding = new System.Windows.Forms.Padding(3);
-            this.pageEsClientEnvrionmentSetting.Size = new System.Drawing.Size(616, 178);
-            this.pageEsClientEnvrionmentSetting.TabIndex = 1;
-            this.pageEsClientEnvrionmentSetting.Text = "驻派员";
             // 
             // pageJoinCMMangement
             // 
@@ -1405,7 +1393,6 @@
         private System.Windows.Forms.TabPage pageEnvironmentSetting;
         private System.Windows.Forms.TabControl tabEnvrionmentSetting;
         private System.Windows.Forms.TabPage pageE10EnvrionmentSetting;
-        private System.Windows.Forms.TabPage pageEsClientEnvrionmentSetting;
         private System.Windows.Forms.LinkLabel lnkAccountSettingView;
         private System.Windows.Forms.LinkLabel lnkExtractRuntimeResources;
         private System.Windows.Forms.LinkLabel lnkImportConfigurationArchives;

@@ -25,8 +25,8 @@ namespace Eproduction.Integrated.Assistant.Start {
                 if (string.IsNullOrEmpty(versionName)) {
                     message = "[版本名称不可空白]";
                 } else {
-                    if (versionName.Length > 20) {
-                        message = "[版本名称长度不可超过20个字符]";
+                    if (versionName.Length > 50) {
+                        message = "[版本名称长度不可超过50个字符]";
                     } else if (IntelligentDeployWorker.IsExistsVersionName(Version, versionName)) {
                         message = "[版本名称已存在]";
                     }
@@ -53,8 +53,8 @@ namespace Eproduction.Integrated.Assistant.Start {
                     message = "[版本名称不可空白]";
                     successfully = false;
                 } else {
-                    if (versionName.Length > 20) {
-                        message = "[版本名称长度不可超过20个字符]";
+                    if (versionName.Length > 50) {
+                        message = "[版本名称长度不可超过50个字符]";
                         successfully = false;
                     } else if (IntelligentDeployWorker.IsExistsVersionName(Version, versionName)) {
                         message = "[版本名称已存在]";
